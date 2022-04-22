@@ -3,16 +3,16 @@ package com.ecomerce.ecommerce.common;
 import java.time.LocalDateTime;
 
 public class ApiResponse {
-    private final boolean success;
+    private final boolean succes;
     private final String message;
 
-    private ApiResponse(boolean success, String message) {
-        this.success = success;
+    public ApiResponse(boolean succes, String message) {
+        this.succes = succes;
         this.message = message;
     }
 
-    public boolean isSuccess() {
-        return success;
+    public boolean isSucces() {
+        return succes;
     }
 
     public String getMessage() {
@@ -22,4 +22,5 @@ public class ApiResponse {
     public String getTimestamp() {
         return LocalDateTime.now().toString();
     }
+
 }
